@@ -1,0 +1,48 @@
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.risk-card {
+  border: 3px solid;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  background: #1a1a1a;
+  color: white;
+}
+
+.risk-card h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+th {
+  background: #2d6a4f;
+  color: white;
+}
+
+.error {
+  color: #e63946;
+  font-weight: bold;
+}

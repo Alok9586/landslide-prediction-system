@@ -1,0 +1,21 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Django
+db.sqlite3
+*.log
+
+# Node/React
+node_modules/
+frontend/node_modules/
+frontend/build/
+
+# Project data/logs (regenerated, not needed in repo)
+engine/risk_log.csv
+
+# OS junk
+.DS_Store
+Thumbs.db

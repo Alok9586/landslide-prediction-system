@@ -1,0 +1,15 @@
+cd D:\landslide-project\backend && python manage.py runserver
+cd D:\landslide-project\frontend && npm start
+cd D:\landslide-project\engine && python run_loop.py
+
+
+
+
+#model train 92% better than 100%
+Why this result is actually better than the 100% one
+Feature importance is now sensible: vibration_count and tilt_x lead, followed by terrain and soil features — no single column dominates unrealistically anymore
+Rainfall now contributes (5-8% combined) instead of being ignored — still lower than the simulated features since real-world rainfall-only prediction is genuinely harder, which is honest
+Confusion matrix: 55/60 safe cases correct, 57/60 danger cases correct — a few real mistakes in both directions, exactly what a genuine model looks like
+For your report: this 93% number is one you can defend if asked "how did you validate this isn't overfitting" — the 100% version would have fallen apart under that question
+
+One thing worth writing into your report's limitations section: recall on class 1 (missing 3 out of 60 real danger cases) means the system isn't perfect at catching every landslide — which is true of every real early-warning system too, and shows mature understanding of the problem rather than overselling your model.
